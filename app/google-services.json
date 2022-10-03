@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "612571287805",
+    "firebase_url": "https://piggebank-id.firebaseio.com",
+    "project_id": "piggebank-id",
+    "storage_bucket": "piggebank-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612571287805:android:2efa6489e93bfb43",
+        "android_client_info": {
+          "package_name": "com.piggebank.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612571287805-f7j3cpb52gsd5iie6bb3ql7mb50efj3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piggebank.android",
+            "certificate_hash": "5faa1b83470ab20ce36941562510c7a3553110c1"
+          }
+        },
+        {
+          "client_id": "612571287805-hhv00h690ivagk1eojg8kaqcgu2n33qe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBlxbnbNJYQy9yv1nfUXtDc-BKuqBlt-o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612571287805-hhv00h690ivagk1eojg8kaqcgu2n33qe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

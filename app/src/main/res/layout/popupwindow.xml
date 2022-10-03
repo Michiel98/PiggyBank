@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@color/blue"
+    tools:context="com.piggebank.uitgavenBoeken.Popup">
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/bevestiging"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Confirmation" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="Edit Expense"
+            android:onClick="terugNaarUitgave"/>
+
+
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/back"
+
+                android:layout_marginLeft="10dp"
+                android:background ="@color/silver"
+                android:layout_height="60dp"
+                android:layout_width="100dp"
+                android:text="Confirm"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:onClick="backHome">
+            </Button>
+
+            <android.support.v4.widget.Space
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/nieuweUitgave"
+                android:background ="@color/silver"
+                android:layout_marginBottom="15dp"
+                android:layout_height="60dp"
+                android:layout_width="100dp"
+                android:text="New Expense"
+                android:onClick="nieuweUitgave">
+
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

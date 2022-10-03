@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.piggebank.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.piggebank.mainLogIn"
+            android:label="@string/app_name"
+            android:theme="@style/mainLogIn.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.piggebank.registrationPackage.Registration"
+            android:label="registration"
+            android:theme="@style/registration.theme"/>
+
+        <activity
+            android:name="com.piggebank.registrationPackage.firstLogIn"
+            android:theme="@style/registration.theme">
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.piggebank.friendPackage.friendList" />
+
+        <activity android:name="com.piggebank.friendPackage.AddFriend" />
+
+        <activity
+            android:name="com.piggebank.settingsPackage.MyPreferenceActivity"
+            android:theme="@style/registration.theme"/>
+
+        <activity
+            android:name="com.piggebank.HomePage"
+            android:label="Home Page" />
+
+        <activity
+            android:name="com.piggebank.uitgavenBoeken.uitgaveBoeken"
+            android:label="Uitgave Boeken">
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.piggebank.uitgavenBoeken.extraCategory"
+            android:label="Add category"
+            android:theme="@style/AppTheme.Popup" />
+
+        <activity
+            android:name="com.piggebank.uitgavenBoeken.Popup"
+            android:label="Bevestiging"
+            android:theme="@style/AppTheme.Popup" />
+
+        <activity
+            android:name="com.piggebank.uitgavenOverzicht.uitgaveOverzicht"
+            android:label="Uitgave Overzicht" />
+
+        <activity
+            android:name="com.piggebank.paybackPackage.PayBackMain"
+            android:label="PayBackTabs" />
+    </application>
+</manifest>

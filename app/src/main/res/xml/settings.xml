@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/registration.theme">
+
+    <!-- information -->
+    <PreferenceScreen
+        android:key="button_information_category_key"
+        android:title="Information"
+        android:persistent="false">
+
+        <EditTextPreference
+            android:title="Your Nickname"
+            android:key="nickname"
+            android:summary="Please provide your nickname" />
+
+        <EditTextPreference
+            android:title="Your first name"
+            android:key="firstName"
+            android:summary="Please provide your first name" />
+
+        <EditTextPreference
+            android:title="Your last name"
+            android:key="lastName"
+            android:summary="Please provide your last name" />
+
+        <Preference
+            android:key="birthdate"
+            android:title="Birthdate"
+            android:summary="Pick your birthdate"/>
+        <EditTextPreference
+            android:title="Your email"
+            android:key="email"
+            android:summary="Please provide your email" />
+
+    </PreferenceScreen>
+
+    <!-- income -->
+    <PreferenceScreen
+        android:key="button_income_category_key"
+        android:title="Income"
+        android:persistent="false">
+
+        <!-- add income -->
+        <PreferenceScreen
+            android:key="button_add_income_key"
+            android:title="add an income"
+            android:persistent="false" />
+
+        <!-- change incomes -->
+        <PreferenceScreen
+            android:key="button_current_income_key"
+            android:title="handle current incomes"
+            android:persistent="false">
+
+            <EditTextPreference
+                android:key="nameOfIncome"
+                android:title="your income"
+                android:persistent="false"/>
+
+            <EditTextPreference
+                android:title="Price of income"
+                android:key="priceOfIncome"
+                android:summary="The price of your income" />
+
+            <EditTextPreference
+                android:title="Frequency of income"
+                android:key="frequencyOfIncome"
+                android:summary="How frequent do you get it?" />
+
+        </PreferenceScreen>
+
+    </PreferenceScreen>
+
+    <!-- goal -->
+    <PreferenceScreen
+        android:key="button_goal_category_key"
+        android:title="Goal"
+        android:persistent="false">
+
+        <!-- add a goal -->
+        <PreferenceScreen
+            android:key="button_add_goal_key"
+            android:title="add a goal"
+            android:persistent="false" />
+
+        <!-- handle current goals -->
+        <PreferenceScreen
+            android:key="button_current_goal_key"
+            android:title="handle current goals"
+            android:persistent="false">
+
+            <EditTextPreference
+                android:key="nameOfGoal"
+                android:title="your goal"
+                android:persistent="false"/>
+
+            <EditTextPreference
+                android:title="Price of goal"
+                android:key="priceOfGoal"
+                android:summary="The price of your goal" />
+
+            <EditTextPreference
+                android:title="Frequency number of goal"
+                android:key="numberOfPeriod"
+                android:summary="How frequent do you get it?" />
+
+            <EditTextPreference
+                android:title="Frequency of goal"
+                android:key="period"
+                android:summary="How frequent do you get it?" />
+
+            <CheckBoxPreference
+                android:title="Add to HomePage?"
+                android:key="addToHome"
+                android:summary="You can see your progress in this way"/>
+
+        </PreferenceScreen>
+
+    </PreferenceScreen>
+
+    <!-- manage profile picture -->
+    <PreferenceScreen
+        android:key="button_picture_category_key"
+        android:title="Profile picture"
+        android:persistent="false">
+
+        <PreferenceScreen
+            android:key="picture_image"
+            android:title="Your picture"
+            android:persistent="false"/>
+
+        <PreferenceScreen
+            android:key="change_picture_image"
+            android:title="change picture?"
+            android:persistent="false"/>
+
+    </PreferenceScreen>
+
+</PreferenceScreen>
+

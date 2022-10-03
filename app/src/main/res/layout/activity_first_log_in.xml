@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_screen_slide_page.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/fragment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:textSize="30dp"
+        android:textAllCaps="true"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <com.piggebank.registrationPackage.CustomViewPager
+        android:id="@+id/cviewPager"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/mDotsLayout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        />
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
